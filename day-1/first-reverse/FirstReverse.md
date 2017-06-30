@@ -8,7 +8,7 @@ and return the string in reversed order.
 
 For example: if the input string is "Hello World and Coders" then your program should return the string "sredoC dna dlroW olleH." 
 
-## SAMPLE TEST CASES
+## Sample Test Cases
 
 Input: "coderbyte"
 Output: "etybredoc"
