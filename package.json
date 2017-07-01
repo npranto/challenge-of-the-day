@@ -1,0 +1,28 @@
+{
+  "name": "challenge-of-the-day",
+  "version": "1.0.0",
+  "description": "Take on a coding problem(s), challenge(s) every day or so to stay active mentally and practice problem solving.",
+  "main": "index.js",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.5.2",
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2",
+    "rimraf": "^2.6.1"
+  },
+  "scripts": {
+    "clean": "rimraf dist/",
+    "compile": "npm run clean && ./node_modules/babel-cli/bin/babel.js src --out-dir dist", 
+    "test": "npm run compile && mocha dist/**/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/npranto/challenge-of-the-day.git"
+  },
+  "author": "Nazmuz Shakib Pranto <npranto@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/npranto/challenge-of-the-day/issues"
+  },
+  "homepage": "https://github.com/npranto/challenge-of-the-day#readme"
+}
