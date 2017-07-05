@@ -12,9 +12,3 @@ describe('simpleSymbols()', () => {
 		assert.equal(simpleSymbols("f++d+"), "false");
 	})	
 })
-
-Input: "+d+=3=+s+"
-Output: "true"
-
-Input: "f++d+"
-Output: "false"
