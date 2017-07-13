@@ -6,14 +6,15 @@ When passed a letter and an array of letters, numberOfTimesLetterOccurInWord() s
 
 ### Sample Test Cases
 
-Input: ("l", "hello")
+Input: ("l", ["h","e","l","l","o"])
 Output: 2
 
-Input: ("a", "what")
+Input: ("a", ["h","e","l","l","o"])
 Output: 1
 
-Input: ("b", "what")
+Input: ("b", ["w","h","a","t"])
 Output: 0
+
 
 
 
