@@ -1,5 +1,5 @@
 
-# Simple Adding
+# Third Greatest
 
 ### Challenge
 
