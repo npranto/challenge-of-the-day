@@ -12,8 +12,8 @@
   },
   "scripts": {
     "clean": "rimraf dist/",
-    "compile": "npm run clean && ./node_modules/babel-cli/bin/babel.js src --out-dir dist",
-    "test": "npm run compile && mocha dist/**/*.spec.js"
+    "build": "npm run clean && ./node_modules/babel-cli/bin/babel.js src --out-dir dist",
+    "test": "npm run build && mocha dist/**/*.spec.js"
   },
   "repository": {
     "type": "git",
