@@ -1,4 +1,3 @@
-
 # Word Count
 
 ### Challenge
@@ -10,6 +9,5 @@ Have the function WordCount(str) take the str string parameter being passed and 
 Input: "All cows eat grass"
 Output: 4
 
-Input: "lane   cborrowed, why of sd f ,,  dfgdfg gdfggd gh blue"
+Input: "lane cborrowed, why of sd f ,, dfgdfg gdfggd gh blue"
 Output: 10
-

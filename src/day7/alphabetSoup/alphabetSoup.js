@@ -1,10 +1,7 @@
-const alphabetSoup = (str) => {
-  return str
-            .split('')
-            .sort((curr, next) => {
-              return curr.charCodeAt(0) > next.charCodeAt(0);
-            })
-            .join('');          
-}
+const alphabetSoup = (str) =>
+  str
+    .split('')
+    .sort((curr, next) => curr.charCodeAt(0) > next.charCodeAt(0))
+    .join('');
 
 export default alphabetSoup;

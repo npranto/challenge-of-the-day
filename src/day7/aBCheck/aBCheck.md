@@ -1,4 +1,3 @@
-
 # AB Check
 
 ### Challenge
@@ -12,4 +11,3 @@ Output: true
 
 Input: "lane cborrowed"
 Output: false
-

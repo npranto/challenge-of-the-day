@@ -1,5 +1,5 @@
-import isFactor from './../isFactor/isFactor';
-import isPrime from './../isPrime/isPrime';
+import isFactor from '../isFactor/isFactor';
+import isPrime from '../isPrime/isPrime';
 
 const largestPrimeFactor = (value) => {
   let possibleFactor = Math.floor(value / 2);

@@ -1,9 +1,9 @@
-import isEven from './../../day12/isEven/isEven';
+import isEven from '../../day12/isEven/isEven';
 
 const evenFibonacciNumbers = (firstTerm = 1, secondTerm = 2, evenFibs = []) => {
   const LIMIT = 4000000;
   // find fib num => add firstTerm and secondTerm
-  let newFib = firstTerm + secondTerm;
+  const newFib = firstTerm + secondTerm;
   // if fib sum is less than limit
   if (newFib < LIMIT) {
     // if is even
@@ -15,9 +15,7 @@ const evenFibonacciNumbers = (firstTerm = 1, secondTerm = 2, evenFibs = []) => {
     return evenFibonacciNumbers(secondTerm, newFib, evenFibs);
   }
   // return sum of all numbers in evenFibs
-  return evenFibs.reduce((sum, eachFib) => {
-    return sum + eachFib;
-  }, 0);
+  return evenFibs.reduce((sum, eachFib) => sum + eachFib, 0);
 };
 
 export default evenFibonacciNumbers;

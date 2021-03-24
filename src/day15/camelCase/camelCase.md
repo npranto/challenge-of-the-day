@@ -11,7 +11,3 @@ Output: "findMean"
 
 Input: "hello world"
 Output: "helloWorld"
-
-
-
-

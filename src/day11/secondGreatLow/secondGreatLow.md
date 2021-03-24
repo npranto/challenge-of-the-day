@@ -2,8 +2,8 @@
 
 ### Challenge
 
-Using the JavaScript language, have the function SecondGreatLow(arr) take the array of numbers stored in arr and return the second 
-lowest and second greatest numbers, respectively, separated by a space. For example: if arr contains [7, 7, 12, 98, 106] the output 
+Using the JavaScript language, have the function SecondGreatLow(arr) take the array of numbers stored in arr and return the second
+lowest and second greatest numbers, respectively, separated by a space. For example: if arr contains [7, 7, 12, 98, 106] the output
 should be 12 98. The array will not be empty and will contain at least 2 numbers. It can get tricky if there's just two numbers!
 
 ### Sample Test Cases
@@ -13,7 +13,3 @@ Output: 12, 98
 
 Input: [45, 853, 845, 23, 892]
 Output: 843, 845
-
-
-
-

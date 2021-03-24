@@ -14,8 +14,3 @@ Output: true
 
 Input: 28
 Output: false
-
-
-
-
-

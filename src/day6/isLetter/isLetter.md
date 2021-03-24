@@ -1,4 +1,3 @@
-
 # Is Letter
 
 ### Challenge

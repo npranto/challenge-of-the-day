@@ -1,4 +1,3 @@
-
 # Vowel Count
 
 ### Challenge
@@ -12,4 +11,3 @@ Output: 5
 
 Input: "lane cborrowed"
 Output: 5
-

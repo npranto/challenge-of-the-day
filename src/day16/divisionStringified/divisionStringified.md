@@ -11,7 +11,3 @@ Output: "12,345"
 
 Input: 1000 and 5
 Output: "200"
-
-
-
-

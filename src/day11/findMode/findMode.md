@@ -11,7 +11,3 @@ Output: null
 
 Input: [5, 3, 3, 2, 2, 3]
 Output: 3
-
-
-
-

@@ -11,7 +11,3 @@ Output: 2
 
 Input: [5, 3, 3, 2, 2]
 Output: 3
-
-
-
-

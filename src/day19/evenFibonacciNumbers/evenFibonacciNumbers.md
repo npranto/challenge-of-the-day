@@ -12,8 +12,3 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 
 Input: N/A
 Output: 4613730
-
-
-
-
-

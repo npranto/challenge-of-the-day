@@ -1,16 +1,13 @@
+import { assert } from 'chai';
+import powersOfTwo from './powersOfTwo';
 
-// Specs for powersofTwo.js
-
-import {assert} from 'chai';
-import powersofTwo from './powersofTwo.js';
-
-describe('powersofTwo()', () => {
-    it('should return false when passed 16', () => {
-        assert.equal(powersofTwo(16), true);
-    })
-    describe('Different argument type cases', () => {
-        it('should return false when passed 22', () => {
-            assert.equal(powersofTwo(22), false);
-        })
-    })
-})
+describe('powersOfTwo()', () => {
+  it('should return false when passed 16', () => {
+    assert.equal(powersOfTwo(16), true);
+  });
+  describe('Different argument type cases', () => {
+    it('should return false when passed 22', () => {
+      assert.equal(powersOfTwo(22), false);
+    });
+  });
+});

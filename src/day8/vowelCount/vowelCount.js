@@ -1,12 +1,7 @@
-import isVowel from './../isVowel/isVowel.js';
+/* eslint-disable no-unused-vars */
+import isVowel from '../isVowel/isVowel';
 
-const vowelCount = (str) => {
-	return str
-			.split('')
-			.filter((curr, index, array) => {
-				return isVowel(curr);
-			})
-			.length;
-}
+const vowelCount = (str) =>
+  str.split('').filter((curr, index, array) => isVowel(curr)).length;
 
 export default vowelCount;

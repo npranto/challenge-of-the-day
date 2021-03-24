@@ -1,9 +1,8 @@
 import { assert } from 'chai';
 import evenFibonacciNumbers from './evenFibonacciNumbers';
 
-describe(`evenFibonacciNumbers()`, function() {
-	it(`should return 4613730`, function() {
+describe('evenFibonacciNumbers()', () => {
+  it('should return 4613730', () => {
     assert.equal(evenFibonacciNumbers(), 4613730);
-  })
+  });
 });
-

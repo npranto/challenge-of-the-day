@@ -1,15 +1,15 @@
-import primeTime from './../primeTime/primeTime.js';
+import primeTime from '../primeTime/primeTime';
 
 const primeMover = (nthPrime) => {
-    let currentNumber = 2;
-    let currPrimeRank = 1;
-    while(currPrimeRank !== nthPrime){
-        currentNumber = currentNumber + 1;
-        if(primeTime(currentNumber)){
-            currPrimeRank = currPrimeRank + 1;
-        }
+  let currentNumber = 2;
+  let currPrimeRank = 1;
+  while (currPrimeRank !== nthPrime) {
+    currentNumber += 1;
+    if (primeTime(currentNumber)) {
+      currPrimeRank += 1;
     }
-    return currentNumber;
-}
+  }
+  return currentNumber;
+};
 
 export default primeMover;

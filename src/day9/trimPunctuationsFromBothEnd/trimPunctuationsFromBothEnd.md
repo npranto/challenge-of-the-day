@@ -1,1 +1,1 @@
-trimPunctuationsFromBothEnd.md
+//
