@@ -19,7 +19,7 @@
     "build": "npm run clean && npx babel src --out-dir dist",
     "test": "npm run build && npx mocha dist/**/*.spec.js",
     "lint": "npx eslint src/**",
-    "lint:fix": "npx eslint --fix --ext .js ."
+    "lint:fix": "npx eslint --fix --ext .js ./src/**"
   },
   "repository": {
     "type": "git",
