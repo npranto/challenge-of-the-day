@@ -4,19 +4,20 @@
   "description": "Take on a coding problem(s), challenge(s) every day or so to stay active mentally and practice problem solving.",
   "main": "index.js",
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-preset-env": "^1.5.2",
-    "chai": "^4.0.2",
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.12",
+    "chai": "^4.3.4",
     "eslint": "^7.22.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
-    "mocha": "^3.4.2",
-    "rimraf": "^2.6.1"
+    "mocha": "^3.5.3",
+    "rimraf": "^2.7.1"
   },
   "scripts": {
-    "clean": "rimraf dist/",
-    "build": "npm run clean && ./node_modules/babel-cli/bin/babel.js src --out-dir dist",
-    "test": "npm run build && mocha dist/**/*.spec.js",
+    "clean": "npx rimraf dist/",
+    "build": "npm run clean && npx babel src --out-dir dist",
+    "test": "npm run build && npx mocha dist/**/*.spec.js",
     "lint": "npx eslint src/**",
     "lint:fix": "npx eslint --fix --ext .js ."
   },
