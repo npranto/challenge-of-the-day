@@ -15,4 +15,4 @@ Input: ["hello", "world", "before", "all"]
 Output: "world"
 
 Input: ["one", "two", "three", "four"]
-Output: "one"
+Output: "four"

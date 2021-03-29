@@ -2,10 +2,10 @@ import { assert } from 'chai';
 import longestWord from './longestWord';
 
 describe('longestWord()', () => {
-  it("should return 'time' when passed 'fun&!! time'", () => {
-    assert.equal(longestWord('fun&!! time'), 'time');
+  it("should return 'fun' when passed 'fun&!! time'", () => {
+    assert.equal(longestWord('fun&!! time'), 'fun');
   });
-  it("should return 'love' when passed 'I love dogs'", () => {
-    assert.equal(longestWord('I love dogs'), 'love');
+  it("should return 'I' when passed 'I love dogs'", () => {
+    assert.equal(longestWord('I love dogs'), 'I');
   });
 });

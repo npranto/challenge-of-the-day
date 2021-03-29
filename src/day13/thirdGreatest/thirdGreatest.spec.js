@@ -8,9 +8,7 @@ describe('thirdGreatest()', () => {
       'world',
     );
   });
-  describe('Different argument type cases', () => {
-    it('should return "one" when passed (["one", "two", "three", "four"], 3)', () => {
-      assert.equal(thirdGreatest(['one', 'two', 'three', 'four'], 3), 'one');
-    });
+  it('should return "one" when passed (["one", "two", "three", "four"], 3)', () => {
+    assert.equal(thirdGreatest(['one', 'two', 'three', 'four'], 3), 'four');
   });
 });
