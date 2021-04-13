@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battle #1 - Pilot Battle - Forking Crazy</title>
+  </head>
+  <body>
+    <div class="element">
+      <div class="wrapper">
+        <div class="fork">
+          <div class="cut-out odd"></div>
+          <div class="cut-out even"></div>
+          <div class="cut-out odd"></div>
+          <div class="cut-out even"></div>
+          <div class="cut-out odd"></div>
+          <div class="cut-out even"></div>
+          <div class="cut-out odd"></div>
+        </div>
+        <div class="base"></div>
+        <div class="handle"></div>
+      </div>
+    </div>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .element {
+        background: #6592cf;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .handle {
+        width: 20px;
+        height: 55px;
+        background: #060f55;
+      }
+      .base {
+        width: 140px;
+        height: 105px;
+        background: #060f55;
+        border-bottom-left-radius: 150px;
+        border-bottom-right-radius: 150px;
+        margin-bottom: -5px;
+      }
+      .fork {
+        width: 140px;
+        height: 110px;
+        background: transparent;
+        display: flex;
+        margin-bottom: -15px;
+        z-index: 1;
+      }
+      .cut-out {
+        flex-basis: 100%;
+        border-radius: 15px;
+      }
+      .odd {
+        background: #060f55;
+      }
+      .even {
+        background: #6592cf;
+      }
+    </style>
+
+    <!-- OBJECTIVE -->
+    <!-- Write HTML/CSS in this editor and replicate the given target image in the least code possible. What you write here, renders as it is -->
+
+    <!-- SCORING -->
+    <!-- The score is calculated based on the number of characters you use (this comment included :P) and how close you replicate the image. Read the FAQS (https://cssbattle.dev/faqs) for more info. -->
+
+    <!-- IMPORTANT: remove the comments before submitting -->
+  </body>
+</html>
