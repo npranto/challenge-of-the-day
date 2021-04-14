@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battle #1 - Pilot Battle - Eye of Sauron</title>
+  </head>
+  <body>
+    <div class="element center">
+      <div class="wrapper center">
+        <div class="container-left">
+          <div class="left circle center">
+            <div class="inner-circle circle"></div>
+          </div>
+          <div class="cover"></div>
+        </div>
+        <div class="circle middle center">
+          <div class="circle inner-circle center">
+            <div class="circle inner-red-circle"></div>
+          </div>
+        </div>
+        <div class="container-right">
+          <div class="right circle center">
+            <div class="inner-circle circle"></div>
+          </div>
+          <div class="cover"></div>
+        </div>
+      </div>
+    </div>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .circle {
+        border-radius: 50%;
+      }
+      .element {
+        width: 100vw;
+        height: 100vh;
+        background: #191210;
+      }
+      .container-left,
+      .container-right {
+        position: relative;
+        background: transparent;
+      }
+      .left {
+        width: 90px;
+        height: 90px;
+        background: #eca03d;
+        margin-right: -20px;
+        z-index: 1;
+      }
+      .left .inner-circle {
+        width: 50px;
+        height: 50px;
+        background: #191210;
+      }
+      .container-left {
+        margin-top: 10px;
+      }
+      .container-left .cover {
+        position: absolute;
+        width: 90px;
+        height: 45px;
+        background: #191210;
+        top: 0;
+        left: 0;
+      }
+      .middle {
+        width: 140px;
+        height: 140px;
+        background: #eca03d;
+        z-index: 2;
+      }
+      .middle .inner-circle {
+        width: 100px;
+        height: 100px;
+        background: #191210;
+      }
+      .middle .inner-circle .inner-red-circle {
+        width: 50px;
+        height: 50px;
+        background: #84271c;
+      }
+      .right {
+        width: 90px;
+        height: 90px;
+        background: #eca03d;
+        margin-left: -20px;
+        z-index: 1;
+      }
+      .right .inner-circle {
+        width: 50px;
+        height: 50px;
+        background: #191210;
+      }
+      .container-right .cover {
+        position: absolute;
+        width: 90px;
+        height: 45px;
+        background: #191210;
+        bottom: 0;
+        right: 0;
+      }
+    </style>
+
+    <!-- OBJECTIVE -->
+    <!-- Write HTML/CSS in this editor and replicate the given target image in the least code possible. What you write here, renders as it is -->
+
+    <!-- SCORING -->
+    <!-- The score is calculated based on the number of characters you use (this comment included :P) and how close you replicate the image. Read the FAQS (https://cssbattle.dev/faqs) for more info. -->
+
+    <!-- IMPORTANT: remove the comments before submitting -->
+  </body>
+</html>
