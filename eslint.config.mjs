@@ -1,6 +1,6 @@
-import globals from "globals";
-import pluginJs from "@eslint/js";
-import eslintPluginJest from "eslint-plugin-jest"; // Import jest plugin
+import globals from 'globals';
+import pluginJs from '@eslint/js';
+import eslintPluginJest from 'eslint-plugin-jest';
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
@@ -9,15 +9,15 @@ export default [
       globals: {
         ...globals.browser,
         ...globals.node,
-        jest: "readonly", // Add Jest as a global
-        "jest/globals": true, // Ensure Jest globals are available
+        jest: 'readonly',
+        'jest/globals': true,
       },
     },
   },
   {
-    files: ["src/**/*.spec.js"], // Apply specific rules for your test files
+    files: ['src/**/*.spec.js'],
     plugins: {
-      jest: eslintPluginJest, // Use the plugin object instead of an array
+      jest: eslintPluginJest,
     },
     languageOptions: {
       globals: {
@@ -25,21 +25,9 @@ export default [
       },
     },
     rules: {
-      "jest/valid-expect": "error", // Example Jest-specific rule
-      "jest/no-disabled-tests": "warn", // Example Jest-specific rule
+      'jest/valid-expect': 'error',
+      'jest/no-disabled-tests': 'warn',
     },
-
-    // plugins: {
-    //   jest: jestPlugin,
-    // },
-    // languageOptions: {
-    //   globals: {
-    //     ...globals.jest,
-    //   },
-    // },
-    // rules: {
-    //   ...jestPlugin.configs.recommended.rules,
-    // },
   },
-  pluginJs.configs.recommended, // Apply the default JavaScript rules
+  pluginJs.configs.recommended,
 ];

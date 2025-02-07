@@ -21,7 +21,6 @@
     "test": "jest --coverage --color",
     "lint": "npx eslint src/**",
     "format": "npx prettier --write src/**",
-    "lint:fix": "npx eslint --fix --ext .js ./src/**",
     "all": "npm run clean && npm run build && npm run format && npm run lint && npm run test"
   },
   "repository": {
