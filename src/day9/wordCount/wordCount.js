@@ -1,11 +1,11 @@
 /* eslint-disable no-unused-vars */
-import trimPunctuationsFromBothEnd from '../trimPunctuationsFromBothEnd/trimPunctuationsFromBothEnd'
+import trimPunctuationsFromBothEnd from '../trimPunctuationsFromBothEnd/trimPunctuationsFromBothEnd';
 
 const wordCount = (str) =>
   str
     .split(' ')
     .filter((curr, index, arr) =>
       /^[a-zA-Z]+$/.test(trimPunctuationsFromBothEnd(curr))
-    ).length
+    ).length;
 
-export default wordCount
+export default wordCount;

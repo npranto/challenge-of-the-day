@@ -3,6 +3,6 @@ const longestWord = (str) =>
   str
     .split(/[.,\/#!$%\^&\*;:{}=\-_`~()\s]+/g)
     .sort((a, b) => b.length > a.length)
-    .shift()
+    .shift();
 
-export default longestWord
+export default longestWord;

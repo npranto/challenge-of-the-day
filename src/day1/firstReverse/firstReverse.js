@@ -1,8 +1,8 @@
 const firstReverse = (str) => {
   if (typeof str === 'string') {
-    return str.split('').reverse().join('')
+    return str.split('').reverse().join('');
   }
-  return null
-}
+  return null;
+};
 
-export default firstReverse
+export default firstReverse;

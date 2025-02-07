@@ -1,4 +1,4 @@
 const checkNums = (num1, num2) =>
-  num2 >= num1 ? (num1 === num2 ? '-1' : 'true') : 'false'
+  num2 >= num1 ? (num1 === num2 ? '-1' : 'true') : 'false';
 
-export default checkNums
+export default checkNums;

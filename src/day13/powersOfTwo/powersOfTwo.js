@@ -1,17 +1,17 @@
 const helperOfPowersofTwo = (currValue, currPower, powerOfTwoCandidate) => {
   if (currValue >= powerOfTwoCandidate) {
-    return currValue
+    return currValue;
   }
-  currPower += 1
-  currValue = Math.pow(2, currPower)
-  return helperOfPowersofTwo(currValue, currPower, powerOfTwoCandidate)
-}
+  currPower += 1;
+  currValue = Math.pow(2, currPower);
+  return helperOfPowersofTwo(currValue, currPower, powerOfTwoCandidate);
+};
 
 const powersofTwo = (powerOfTwoCandidate) => {
   if (helperOfPowersofTwo(1, 0, powerOfTwoCandidate) === powerOfTwoCandidate) {
-    return true
+    return true;
   }
-  return false
-}
+  return false;
+};
 
-export default powersofTwo
+export default powersofTwo;

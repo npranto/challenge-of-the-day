@@ -1,4 +1,4 @@
-import isLetter from '../isLetter/isLetter'
+import isLetter from '../isLetter/isLetter';
 
 const simpleSymbols = (str) => {
   const valueWithNoSymbolBeforeIt = str
@@ -6,8 +6,8 @@ const simpleSymbols = (str) => {
     .find(
       (elem, index, array) =>
         isLetter(elem) && (index === 0 || array[index - 1] !== '+')
-    )
-  return valueWithNoSymbolBeforeIt ? 'false' : 'true'
-}
+    );
+  return valueWithNoSymbolBeforeIt ? 'false' : 'true';
+};
 
-export default simpleSymbols
+export default simpleSymbols;

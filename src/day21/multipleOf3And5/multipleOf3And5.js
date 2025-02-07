@@ -1,18 +1,18 @@
 const multipleOf3And5 = (num) => {
-  const LIMIT = num
-  const multiples = []
+  const LIMIT = num;
+  const multiples = [];
 
   // collect all the multiples of 3 and 5 inside `multiples` array
   for (let i = 1; i < LIMIT; i++) {
     if (i % 3 === 0 || i % 5 === 0) {
-      multiples.push(i)
+      multiples.push(i);
     }
   }
 
   // sum of all the multiples
-  const sum = multiples.reduce((total, multiple) => total + multiple, 0)
+  const sum = multiples.reduce((total, multiple) => total + multiple, 0);
 
-  return sum
-}
+  return sum;
+};
 
-export default multipleOf3And5
+export default multipleOf3And5;

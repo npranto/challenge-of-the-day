@@ -1,21 +1,21 @@
-import isEven from '../../day12/isEven/isEven'
+import isEven from '../../day12/isEven/isEven';
 
 const evenFibonacciNumbers = (firstTerm = 1, secondTerm = 2, evenFibs = []) => {
-  const LIMIT = 4000000
+  const LIMIT = 4000000;
   // find fib num => add firstTerm and secondTerm
-  const newFib = firstTerm + secondTerm
+  const newFib = firstTerm + secondTerm;
   // if fib sum is less than limit
   if (newFib < LIMIT) {
     // if is even
     if (isEven(newFib)) {
       // add it to sum list
-      evenFibs.push(newFib)
+      evenFibs.push(newFib);
     }
     // return recursively run evenFibonacciNumbers(secondTerm, new fib sum, evenFibs)
-    return evenFibonacciNumbers(secondTerm, newFib, evenFibs)
+    return evenFibonacciNumbers(secondTerm, newFib, evenFibs);
   }
   // return sum of all numbers in evenFibs
-  return evenFibs.reduce((sum, eachFib) => sum + eachFib, 0)
-}
+  return evenFibs.reduce((sum, eachFib) => sum + eachFib, 0);
+};
 
-export default evenFibonacciNumbers
+export default evenFibonacciNumbers;

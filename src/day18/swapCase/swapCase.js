@@ -1,4 +1,4 @@
-import isLetter from '../../day6/isLetter/isLetter'
+import isLetter from '../../day6/isLetter/isLetter';
 
 const swapCase = (str) =>
   str
@@ -10,6 +10,6 @@ const swapCase = (str) =>
           : char.toUpperCase()
         : char
     )
-    .join('')
+    .join('');
 
-export default swapCase
+export default swapCase;
