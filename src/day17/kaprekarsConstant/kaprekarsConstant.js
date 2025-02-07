@@ -3,38 +3,38 @@ const kaprekarsConstant = (num) => {
     parseInt(
       num
         .toString()
-        .split("")
+        .split('')
         .map((char) => parseInt(char))
         .sort(sortLogic)
-        .join(""),
-    );
+        .join('')
+    )
 
   const fitForFourDigit = (num) => {
-    let newNumberString = num.toString();
+    let newNumberString = num.toString()
     if (newNumberString.length < 4) {
       while (newNumberString.length < 4) {
-        newNumberString += "0";
+        newNumberString += '0'
       }
     }
-    return parseInt(newNumberString);
-  };
-
-  const target = 6174;
-  let targetReached = false;
-  let attempts = 0;
-
-  while (!targetReached) {
-    const descendingNumber = orderNumber(num, (a, b) => b - a);
-    const ascendingNumber = orderNumber(num, (a, b) => a - b);
-    if (descendingNumber - ascendingNumber === target) {
-      targetReached = true;
-    } else {
-      num = fitForFourDigit(descendingNumber - ascendingNumber);
-    }
-    attempts += 1;
+    return parseInt(newNumberString)
   }
 
-  return attempts;
-};
+  const target = 6174
+  let targetReached = false
+  let attempts = 0
 
-export default kaprekarsConstant;
+  while (!targetReached) {
+    const descendingNumber = orderNumber(num, (a, b) => b - a)
+    const ascendingNumber = orderNumber(num, (a, b) => a - b)
+    if (descendingNumber - ascendingNumber === target) {
+      targetReached = true
+    } else {
+      num = fitForFourDigit(descendingNumber - ascendingNumber)
+    }
+    attempts += 1
+  }
+
+  return attempts
+}
+
+export default kaprekarsConstant

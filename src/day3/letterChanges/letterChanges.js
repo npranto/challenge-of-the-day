@@ -1,21 +1,21 @@
 const getNextLetter = (curr) => {
-  if (typeof curr === "string" && curr.toLowerCase() !== curr.toUpperCase()) {
-    return String.fromCharCode(curr.charCodeAt(0) + 1);
+  if (typeof curr === 'string' && curr.toLowerCase() !== curr.toUpperCase()) {
+    return String.fromCharCode(curr.charCodeAt(0) + 1)
   }
-  return curr;
-};
+  return curr
+}
 
-const isVowel = (char) => /[aeiou]/.test(char);
+const isVowel = (char) => /[aeiou]/.test(char)
 
 const letterChanges = (str) =>
   str
-    .split("")
+    .split('')
     .map((curr) => {
-      let nextLetter = getNextLetter(curr);
-      isVowel(nextLetter) ? (nextLetter = nextLetter.toUpperCase()) : null;
-      curr = nextLetter;
-      return curr;
+      let nextLetter = getNextLetter(curr)
+      isVowel(nextLetter) ? (nextLetter = nextLetter.toUpperCase()) : null
+      curr = nextLetter
+      return curr
     })
-    .join("");
+    .join('')
 
-export default letterChanges;
+export default letterChanges

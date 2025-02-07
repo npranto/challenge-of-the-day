@@ -1,10 +1,10 @@
 const letterCapitalize = (str) =>
   str
-    .split(" ")
+    .split(' ')
     .map((each) => {
-      each = each.charAt(0).toUpperCase() + each.substring(1, each.length);
-      return each;
+      each = each.charAt(0).toUpperCase() + each.substring(1, each.length)
+      return each
     })
-    .join(" ");
+    .join(' ')
 
-export default letterCapitalize;
+export default letterCapitalize

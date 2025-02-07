@@ -1,15 +1,15 @@
-import isLetter from "../../day6/isLetter/isLetter";
+import isLetter from '../../day6/isLetter/isLetter'
 
 const swapCase = (str) =>
   str
-    .split("")
+    .split('')
     .map((char) =>
       isLetter(char)
         ? char === char.toUpperCase()
           ? char.toLowerCase()
           : char.toUpperCase()
-        : char,
+        : char
     )
-    .join("");
+    .join('')
 
-export default swapCase;
+export default swapCase

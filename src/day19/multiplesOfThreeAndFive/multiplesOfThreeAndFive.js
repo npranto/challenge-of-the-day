@@ -1,21 +1,21 @@
 const sumOfMultiplesOfThreeAndFive = (limit) => {
-  const allMultiples = {};
-  let counter = 1;
+  const allMultiples = {}
+  let counter = 1
 
   while (counter < limit) {
     if (counter % 3 === 0 && !allMultiples[counter]) {
-      allMultiples[counter] = true;
+      allMultiples[counter] = true
     }
     if (counter % 5 === 0 && !allMultiples[counter]) {
-      allMultiples[counter] = true;
+      allMultiples[counter] = true
     }
-    counter++;
+    counter++
   }
 
   return Object.keys(allMultiples).reduce(
     (sum, eachMultiple) => sum + parseInt(eachMultiple),
-    0,
-  );
-};
+    0
+  )
+}
 
-export default sumOfMultiplesOfThreeAndFive;
+export default sumOfMultiplesOfThreeAndFive

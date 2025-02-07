@@ -1,22 +1,22 @@
 /* eslint-disable no-unused-vars */
 const findMode = (arrOfNumbers) => {
-  let mostOccuranceNumber = null;
-  let mostOccurance = 0;
+  let mostOccuranceNumber = null
+  let mostOccurance = 0
   arrOfNumbers.forEach((curr, index, arr) => {
     if (numberOfOccurances(curr, arr) > mostOccurance) {
-      mostOccurance = numberOfOccurances(curr, arr);
-      mostOccuranceNumber = curr;
+      mostOccurance = numberOfOccurances(curr, arr)
+      mostOccuranceNumber = curr
     }
-  });
-  return mostOccuranceNumber === 1 ? null : mostOccuranceNumber;
-};
+  })
+  return mostOccuranceNumber === 1 ? null : mostOccuranceNumber
+}
 
 const numberOfOccurances = (numberToMatch, arr) => {
-  let totalOccurs = 0;
+  let totalOccurs = 0
   arr.forEach((curr, index, arr) => {
-    curr === numberToMatch ? (totalOccurs += 1) : null;
-  });
-  return totalOccurs;
-};
+    curr === numberToMatch ? (totalOccurs += 1) : null
+  })
+  return totalOccurs
+}
 
-export default findMode;
+export default findMode

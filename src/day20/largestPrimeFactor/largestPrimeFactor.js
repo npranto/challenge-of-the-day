@@ -1,15 +1,15 @@
-import isFactor from "../isFactor/isFactor";
-import isPrime from "../isPrime/isPrime";
+import isFactor from '../isFactor/isFactor'
+import isPrime from '../isPrime/isPrime'
 
 const largestPrimeFactor = (value) => {
-  let possibleFactor = Math.floor(value / 2);
+  let possibleFactor = Math.floor(value / 2)
   while (possibleFactor > 1) {
     if (isFactor(possibleFactor, value) && isPrime(possibleFactor)) {
-      return possibleFactor;
+      return possibleFactor
     }
-    possibleFactor -= 1;
+    possibleFactor -= 1
   }
-  return possibleFactor;
-};
+  return possibleFactor
+}
 
-export default largestPrimeFactor;
+export default largestPrimeFactor

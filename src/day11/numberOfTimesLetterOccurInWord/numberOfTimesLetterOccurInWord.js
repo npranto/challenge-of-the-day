@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
 const numberOfTimesLetterOccurInWord = (letter, arr) => {
-  let totalOccurs = 0;
+  let totalOccurs = 0
   arr.forEach((curr, index, arr) => {
     if (curr === letter) {
-      totalOccurs += 1;
+      totalOccurs += 1
     }
-  });
-  return totalOccurs;
-};
+  })
+  return totalOccurs
+}
 
-export default numberOfTimesLetterOccurInWord;
+export default numberOfTimesLetterOccurInWord
