@@ -1,12 +1,11 @@
-import { assert } from 'chai';
+import isFactor from "./isFactor";
 
-import isFactor from './isFactor';
-
-describe('isFactor()', () => {
-  it('should return true when passed 3 and 12', () => {
-    assert.equal(isFactor(3, 12), true);
+describe("isFactor()", () => {
+  test("returns true when passed 3 and 12", () => {
+    expect(isFactor(3, 12)).toBe(true);
   });
-  it('should return false when passed 3 and 13', () => {
-    assert.equal(isFactor(3, 13), false);
+
+  test("returns false when passed 3 and 13", () => {
+    expect(isFactor(3, 13)).toBe(false);
   });
 });

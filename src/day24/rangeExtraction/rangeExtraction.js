@@ -1,15 +1,15 @@
 const rangeExtraction = (list) => {
-  if (!list || !list.length) return '';
+  if (!list || !list.length) return "";
 
   if (list.length === 1) return `${list[0]}`;
 
   let sets = [list[0]];
   const ranges = [];
   let index = 1;
-  
+
   while (index < list.length) {
     const current = list[index];
-    const isLastIndex = index === list.length - 1; 
+    const isLastIndex = index === list.length - 1;
 
     if (current - sets[sets.length - 1] === 1) {
       sets.push(current);
@@ -32,10 +32,10 @@ const rangeExtraction = (list) => {
 
     index += 1;
   }
-    
+
   return ranges
-    .map((e) => ((typeof e === 'number') ? e : `${e.low}-${e.high}`))
-    .join(',');
+    .map((e) => (typeof e === "number" ? e : `${e.low}-${e.high}`))
+    .join(",");
 };
 
 export default rangeExtraction;

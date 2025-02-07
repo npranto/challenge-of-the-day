@@ -1,14 +1,15 @@
-import { assert } from 'chai';
-import checkNums from './checkNums';
+import checkNums from "./checkNums";
 
-describe('checkNums()', () => {
-  it('should return "true" when passed (3, 122)', () => {
-    assert.equal(checkNums(3, 122), 'true');
+describe("checkNums()", () => {
+  test('should return "true" when passed (3, 122)', () => {
+    expect(checkNums(3, 122)).toBe("true");
   });
-  it('should return "-1" when passed (10, 10)', () => {
-    assert.equal(checkNums(10, 10), '-1');
+
+  test('should return "-1" when passed (10, 10)', () => {
+    expect(checkNums(10, 10)).toBe("-1");
   });
-  it('should return "false" when passed (15, 7)', () => {
-    assert.equal(checkNums(15, 7), 'false');
+
+  test('should return "false" when passed (15, 7)', () => {
+    expect(checkNums(15, 7)).toBe("false");
   });
 });

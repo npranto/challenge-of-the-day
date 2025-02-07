@@ -1,11 +1,11 @@
-import { assert } from 'chai';
-import primeMover from './primeMover';
+import primeMover from "./primeMover";
 
-describe('primeMover()', () => {
-  it('should return 53 when passed 16', () => {
-    assert.equal(primeMover(16), 53);
+describe("primeMover()", () => {
+  test("returns 53 when passed 16", () => {
+    expect(primeMover(16)).toBe(53);
   });
-  it('should return 5 when passed 3', () => {
-    assert.equal(primeMover(3), 5);
+
+  test("returns 5 when passed 3", () => {
+    expect(primeMover(3)).toBe(5);
   });
 });

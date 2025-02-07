@@ -1,7 +1,4 @@
-/* eslint-disable no-shadow */
 /* eslint-disable no-unused-vars */
-/* eslint-disable no-unused-expressions */
-/* eslint-disable no-use-before-define */
 const findMode = (arrOfNumbers) => {
   let mostOccuranceNumber = null;
   let mostOccurance = 0;

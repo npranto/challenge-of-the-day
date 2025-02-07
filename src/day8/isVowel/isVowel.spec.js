@@ -1,33 +1,33 @@
-import { assert } from 'chai';
-import isVowel from './isVowel';
+import isVowel from "./isVowel";
 
-describe('isVowel()', () => {
-  describe('Check all the vowels', () => {
-    it('should return true when passed "a"', () => {
-      assert.equal(isVowel('a'), true);
+describe("isVowel()", () => {
+  describe("Check all the vowels", () => {
+    test('should return true when passed "a"', () => {
+      expect(isVowel("a")).toBe(true);
     });
-    it('should return true when passed "e"', () => {
-      assert.equal(isVowel('e'), true);
+    test('should return true when passed "e"', () => {
+      expect(isVowel("e")).toBe(true);
     });
-    it('should return true when passed "i"', () => {
-      assert.equal(isVowel('i'), true);
+    test('should return true when passed "i"', () => {
+      expect(isVowel("i")).toBe(true);
     });
-    it('should return true when passed "o"', () => {
-      assert.equal(isVowel('o'), true);
+    test('should return true when passed "o"', () => {
+      expect(isVowel("o")).toBe(true);
     });
-    it('should return true when passed "u"', () => {
-      assert.equal(isVowel('u'), true);
+    test('should return true when passed "u"', () => {
+      expect(isVowel("u")).toBe(true);
     });
   });
-  describe('Check a few consonants', () => {
-    it('should return false when passed "b"', () => {
-      assert.equal(isVowel('b'), false);
+
+  describe("Check a few consonants", () => {
+    test('should return false when passed "b"', () => {
+      expect(isVowel("b")).toBe(false);
     });
-    it('should return false when passed "p"', () => {
-      assert.equal(isVowel('p'), false);
+    test('should return false when passed "p"', () => {
+      expect(isVowel("p")).toBe(false);
     });
-    it('should return false when passed "y"', () => {
-      assert.equal(isVowel('y'), false);
+    test('should return false when passed "y"', () => {
+      expect(isVowel("y")).toBe(false);
     });
   });
 });

@@ -1,22 +1,19 @@
-/* eslint-disable no-param-reassign */
-/* eslint-disable radix */
-/* eslint-disable no-shadow */
 const kaprekarsConstant = (num) => {
   const orderNumber = (num, sortLogic) =>
     parseInt(
       num
         .toString()
-        .split('')
+        .split("")
         .map((char) => parseInt(char))
         .sort(sortLogic)
-        .join(''),
+        .join(""),
     );
 
   const fitForFourDigit = (num) => {
     let newNumberString = num.toString();
     if (newNumberString.length < 4) {
       while (newNumberString.length < 4) {
-        newNumberString += '0';
+        newNumberString += "0";
       }
     }
     return parseInt(newNumberString);

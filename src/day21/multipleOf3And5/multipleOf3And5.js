@@ -1,4 +1,3 @@
-/* eslint-disable no-plusplus */
 const multipleOf3And5 = (num) => {
   const LIMIT = num;
   const multiples = [];

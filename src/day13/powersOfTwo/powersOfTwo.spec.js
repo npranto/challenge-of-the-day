@@ -1,13 +1,13 @@
-import { assert } from 'chai';
-import powersOfTwo from './powersOfTwo';
+import powersOfTwo from "./powersOfTwo";
 
-describe('powersOfTwo()', () => {
-  it('should return false when passed 16', () => {
-    assert.equal(powersOfTwo(16), true);
+describe("powersOfTwo()", () => {
+  test("returns true when passed 16", () => {
+    expect(powersOfTwo(16)).toBe(true);
   });
-  describe('Different argument type cases', () => {
-    it('should return false when passed 22', () => {
-      assert.equal(powersOfTwo(22), false);
+
+  describe("Different argument type cases", () => {
+    test("returns false when passed 22", () => {
+      expect(powersOfTwo(22)).toBe(false);
     });
   });
 });

@@ -1,17 +1,16 @@
-import { assert } from 'chai';
-import trimPunctuationsFromBothEnd from './trimPunctuationsFromBothEnd';
+import trimPunctuationsFromBothEnd from "./trimPunctuationsFromBothEnd";
 
-describe('trimPunctuationsFromBothEnd()', () => {
-  it('should return "All" when passed "All"', () => {
-    assert.equal(trimPunctuationsFromBothEnd('All'), 'All');
+describe("trimPunctuationsFromBothEnd()", () => {
+  test('should return "All" when passed "All"', () => {
+    expect(trimPunctuationsFromBothEnd("All")).toBe("All");
   });
-  it('should return "All" when passed "All,"', () => {
-    assert.equal(trimPunctuationsFromBothEnd('All,'), 'All');
+  test('should return "All" when passed "All,"', () => {
+    expect(trimPunctuationsFromBothEnd("All,")).toBe("All");
   });
-  it('should return "All" when passed "!All"', () => {
-    assert.equal(trimPunctuationsFromBothEnd('!All'), 'All');
+  test('should return "All" when passed "!All"', () => {
+    expect(trimPunctuationsFromBothEnd("!All")).toBe("All");
   });
-  it('should return "All" when passed ",All!"', () => {
-    assert.equal(trimPunctuationsFromBothEnd(',All!'), 'All');
+  test('should return "All" when passed ",All!"', () => {
+    expect(trimPunctuationsFromBothEnd(",All!")).toBe("All");
   });
 });

@@ -1,5 +1,3 @@
-/* eslint-disable no-nested-ternary */
-/* eslint-disable no-shadow */
 const arithGeo = (arr) => {
   const DIFF = arr[1] - arr[0];
   const RATIO = arr[1] / arr[0];
@@ -12,9 +10,9 @@ const arithGeo = (arr) => {
     (curr, index, arr) => arr[index + 1] / curr !== RATIO,
   );
   return isArithmetic.length === 1
-    ? 'Arithmetic'
+    ? "Arithmetic"
     : isGeometric.length === 1
-      ? 'Geometric'
+      ? "Geometric"
       : -1;
 };
 

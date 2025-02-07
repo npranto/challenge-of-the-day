@@ -1,11 +1,10 @@
-import { assert } from 'chai';
-import vowelCount from './vowelCount';
+import vowelCount from "./vowelCount";
 
-describe('vowelCount()', () => {
-  it('should return 5 when passed "All cows eat grass"', () => {
-    assert.equal(vowelCount('All cows eat grass'), 5);
+describe("vowelCount()", () => {
+  test('should return 5 when passed "All cows eat grass"', () => {
+    expect(vowelCount("All cows eat grass")).toBe(5);
   });
-  it('should return 5 when passed "lane cborrowed"', () => {
-    assert.equal(vowelCount('lane cborrowed'), 5);
+  test('should return 5 when passed "lane cborrowed"', () => {
+    expect(vowelCount("lane cborrowed")).toBe(5);
   });
 });

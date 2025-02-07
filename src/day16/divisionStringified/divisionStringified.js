@@ -1,23 +1,23 @@
-/* eslint-disable no-param-reassign */
 const divisionStringified = (num1, num2) => {
-  if (typeof num1 !== 'number' || typeof num2 !== 'number') {
-    throw new Error('parameters must be type number');
+  if (typeof num1 !== "number" || typeof num2 !== "number") {
+    throw new Error("parameters must be type number");
   }
 
   const originalResult = num1 / num2;
-  const rounded = originalResult - Math.floor(originalResult) < 0.5
-    ? Math.floor(originalResult)
-    : Math.ceil(originalResult);
+  const rounded =
+    originalResult - Math.floor(originalResult) < 0.5
+      ? Math.floor(originalResult)
+      : Math.ceil(originalResult);
 
   const roundedStringified = rounded.toString();
 
   return roundedStringified
-    .split('')
+    .split("")
     .reverse()
     .reduce(
       (accum, char) => {
         if (accum.tracker === 3) {
-          accum.resultWithComma.push(',');
+          accum.resultWithComma.push(",");
           accum.tracker = 0;
         }
         accum.resultWithComma.push(char);
@@ -30,7 +30,7 @@ const divisionStringified = (num1, num2) => {
       },
     )
     .resultWithComma.reverse()
-    .join('');
+    .join("");
 };
 
 export default divisionStringified;

@@ -1,14 +1,15 @@
-import { assert } from 'chai';
-import isLetter from './isLetter';
+import isLetter from "./isLetter";
 
-describe('isLetter()', () => {
-  it('should return true when passed "a"', () => {
-    assert.equal(isLetter('a'), true);
+describe("isLetter()", () => {
+  test('should return true when passed "a"', () => {
+    expect(isLetter("a")).toBe(true);
   });
-  it('should return true when passed "F"', () => {
-    assert.equal(isLetter('F'), true);
+
+  test('should return true when passed "F"', () => {
+    expect(isLetter("F")).toBe(true);
   });
-  it('should return false when passed "+"', () => {
-    assert.equal(isLetter('+'), false);
+
+  test('should return false when passed "+"', () => {
+    expect(isLetter("+")).toBe(false);
   });
 });

@@ -1,17 +1,19 @@
-import { assert } from 'chai';
-import primeTime from './primeTime';
+import primeTime from "./primeTime";
 
-describe('primeTime()', () => {
-  it('should return true when passed 7', () => {
-    assert.equal(primeTime(7), true);
+describe("primeTime()", () => {
+  test("returns true when passed 7", () => {
+    expect(primeTime(7)).toBe(true);
   });
-  it('should return false when passed 9', () => {
-    assert.equal(primeTime(9), false);
+
+  test("returns false when passed 9", () => {
+    expect(primeTime(9)).toBe(false);
   });
-  it('should return false when passed 0', () => {
-    assert.equal(primeTime(0), false);
+
+  test("returns false when passed 0", () => {
+    expect(primeTime(0)).toBe(false);
   });
-  it('should return true when passed 13', () => {
-    assert.equal(primeTime(13), true);
+
+  test("returns true when passed 13", () => {
+    expect(primeTime(13)).toBe(true);
   });
 });

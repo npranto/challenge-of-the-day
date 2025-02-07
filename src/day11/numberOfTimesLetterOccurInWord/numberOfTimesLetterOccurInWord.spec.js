@@ -1,18 +1,17 @@
-import { assert } from 'chai';
+import numberOfTimesLetterOccurInWord from "./numberOfTimesLetterOccurInWord";
 
-import numberOfTimesLetterOccurInWord from './numberOfTimesLetterOccurInWord';
-
-describe('numberOfTimesLetterOccurInWord()', () => {
-  it('should return 2 when passed ("l", ["h","e","l","l","o"])', () => {
-    assert.equal(
-      numberOfTimesLetterOccurInWord('l', ['h', 'e', 'l', 'l', 'o']),
+describe("numberOfTimesLetterOccurInWord()", () => {
+  test('returns 2 when passed ("l", ["h","e","l","l","o"])', () => {
+    expect(numberOfTimesLetterOccurInWord("l", ["h", "e", "l", "l", "o"])).toBe(
       2,
     );
   });
-  it('should return 1 when passed ("a", ["w","h","a","t"])', () => {
-    assert.equal(numberOfTimesLetterOccurInWord('a', ['w', 'h', 'a', 't']), 1);
+
+  test('returns 1 when passed ("a", ["w","h","a","t"])', () => {
+    expect(numberOfTimesLetterOccurInWord("a", ["w", "h", "a", "t"])).toBe(1);
   });
-  it('should return 0 when passed ("b", ["w","h","a","t"])', () => {
-    assert.equal(numberOfTimesLetterOccurInWord('b', ['w', 'h', 'a', 't']), 0);
+
+  test('returns 0 when passed ("b", ["w","h","a","t"])', () => {
+    expect(numberOfTimesLetterOccurInWord("b", ["w", "h", "a", "t"])).toBe(0);
   });
 });

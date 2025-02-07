@@ -1,4 +1,4 @@
-import primeTime from '../primeTime/primeTime';
+import primeTime from "../primeTime/primeTime";
 
 const primeMover = (nthPrime) => {
   let currentNumber = 2;

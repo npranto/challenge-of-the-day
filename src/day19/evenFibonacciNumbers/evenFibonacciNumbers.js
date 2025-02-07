@@ -1,4 +1,4 @@
-import isEven from '../../day12/isEven/isEven';
+import isEven from "../../day12/isEven/isEven";
 
 const evenFibonacciNumbers = (firstTerm = 1, secondTerm = 2, evenFibs = []) => {
   const LIMIT = 4000000;

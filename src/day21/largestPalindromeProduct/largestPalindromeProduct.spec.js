@@ -1,12 +1,10 @@
-import { assert } from 'chai';
+import largestPalindromeProduct from "./largestPalindromeProduct";
 
-import largestPalindromeProduct from './largestPalindromeProduct';
-
-describe('largestPalindromeProduct()', () => {
-  it('should return 9009 when passed 2', () => {
-    assert.equal(largestPalindromeProduct(2), 9009);
+describe("largestPalindromeProduct()", () => {
+  test("should return 9009 when passed 2", () => {
+    expect(largestPalindromeProduct(2)).toBe(9009);
   });
-  it('should return 906609 when passed 3', () => {
-    assert.equal(largestPalindromeProduct(3), 906609);
+  test("should return 906609 when passed 3", () => {
+    expect(largestPalindromeProduct(3)).toBe(906609);
   });
 });

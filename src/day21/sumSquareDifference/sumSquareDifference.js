@@ -1,6 +1,3 @@
-/* eslint-disable no-shadow */
-/* eslint-disable no-restricted-properties */
-/* eslint-disable no-plusplus */
 // sumSquareDifference
 const sumSquareDifference = (num) => {
   const naturalNumbers = [];

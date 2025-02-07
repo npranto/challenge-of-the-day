@@ -1,13 +1,11 @@
-/* eslint-disable no-return-assign */
-/* eslint-disable no-param-reassign */
-/* eslint-disable radix */
 const numberAddition = (str) => {
-  const numberMatches = str.match(/\d+/g);
+  const numberMatches = str.match(/-?\d+(\.\d+)?/g);
+  console.log(">>>>", numberMatches);
   return numberMatches
     ? numberMatches.reduce(
-      (sum, numberMatch) => (sum += parseInt(numberMatch)),
-      0,
-    )
+        (sum, numberMatch) => (sum += Number(numberMatch)),
+        0,
+      )
     : 0;
 };
 

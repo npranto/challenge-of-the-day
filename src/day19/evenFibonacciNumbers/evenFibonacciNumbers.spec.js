@@ -1,8 +1,7 @@
-import { assert } from 'chai';
-import evenFibonacciNumbers from './evenFibonacciNumbers';
+import evenFibonacciNumbers from "./evenFibonacciNumbers";
 
-describe('evenFibonacciNumbers()', () => {
-  it('should return 4613730', () => {
-    assert.equal(evenFibonacciNumbers(), 4613730);
+describe("evenFibonacciNumbers()", () => {
+  test("returns 4613730", () => {
+    expect(evenFibonacciNumbers()).toBe(4613730);
   });
 });

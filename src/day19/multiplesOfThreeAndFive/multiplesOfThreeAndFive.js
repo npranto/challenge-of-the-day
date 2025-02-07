@@ -1,5 +1,3 @@
-/* eslint-disable radix */
-/* eslint-disable no-plusplus */
 const sumOfMultiplesOfThreeAndFive = (limit) => {
   const allMultiples = {};
   let counter = 1;

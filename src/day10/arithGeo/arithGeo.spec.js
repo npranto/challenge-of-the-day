@@ -1,15 +1,15 @@
-import { assert } from 'chai';
+import arithGeo from "./arithGeo";
 
-import arithGeo from './arithGeo';
+describe("arithGeo()", () => {
+  test('returns "Arithmetic" for [2, 4, 6, 8]', () => {
+    expect(arithGeo([2, 4, 6, 8])).toBe("Arithmetic");
+  });
 
-describe('arithGeo()', () => {
-  it('should return "Arithmetic" when passed [2, 4, 6, 8]', () => {
-    assert.equal(arithGeo([2, 4, 6, 8]), 'Arithmetic');
+  test('returns "Geometric" for [2, 6, 18, 54]', () => {
+    expect(arithGeo([2, 6, 18, 54])).toBe("Geometric");
   });
-  it('should return "Geometric" when passed [2, 6, 18, 54]', () => {
-    assert.equal(arithGeo([2, 6, 18, 54]), 'Geometric');
-  });
-  it('should return -1 when passed [2, 8, 28, 3]', () => {
-    assert.equal(arithGeo([2, 8, 28, 3]), -1);
+
+  test("returns -1 for [2, 8, 28, 3]", () => {
+    expect(arithGeo([2, 8, 28, 3])).toBe(-1);
   });
 });

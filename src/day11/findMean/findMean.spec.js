@@ -1,12 +1,11 @@
-import { assert } from 'chai';
+import findMean from "./findMean";
 
-import findMean from './findMean';
-
-describe('findMean()', () => {
-  it('should return 2 when passed [1, 2, 3]', () => {
-    assert.equal(findMean([1, 2, 3]), 2);
+describe("findMean()", () => {
+  test("returns 2 for [1, 2, 3]", () => {
+    expect(findMean([1, 2, 3])).toBe(2);
   });
-  it('should return 3 when passed [5, 3, 3, 2, 2]', () => {
-    assert.equal(findMean([5, 3, 3, 2, 2]), 3);
+
+  test("returns 3 for [5, 3, 3, 2, 2]", () => {
+    expect(findMean([5, 3, 3, 2, 2])).toBe(3);
   });
 });

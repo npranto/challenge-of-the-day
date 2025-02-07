@@ -1,5 +1,3 @@
-/* eslint-disable no-plusplus */
-/* eslint-disable no-shadow */
 const largestPrimeFactor = (num) => {
   // find all factors of a number
   const findFactors = (num) => {

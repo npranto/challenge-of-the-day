@@ -1,12 +1,11 @@
-import { assert } from 'chai';
+import findMode from "./findMode";
 
-import findMode from './findMode';
-
-describe('findMode()', () => {
-  it('should return null when passed [1, 2, 3]', () => {
-    assert.equal(findMode([1, 2, 3]), null);
+describe("findMode()", () => {
+  test("returns null for [1, 2, 3]", () => {
+    expect(findMode([1, 2, 3])).toBeNull();
   });
-  it('should return 3 when passed [5, 3, 3, 2, 2, 3]', () => {
-    assert.equal(findMode([5, 3, 3, 2, 2, 3]), 3);
+
+  test("returns 3 for [5, 3, 3, 2, 2, 3]", () => {
+    expect(findMode([5, 3, 3, 2, 2, 3])).toBe(3);
   });
 });

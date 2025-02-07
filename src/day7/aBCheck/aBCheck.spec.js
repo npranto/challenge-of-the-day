@@ -1,11 +1,11 @@
-import { assert } from 'chai';
-import aBCheck from './aBCheck';
+import aBCheck from "./aBCheck";
 
-describe('aBCheck()', () => {
-  it('should return true when passed "lane borrowed"', () => {
-    assert.equal(aBCheck('lane borrowed'), true);
+describe("aBCheck()", () => {
+  test('should return true when passed "lane borrowed"', () => {
+    expect(aBCheck("lane borrowed")).toBe(true);
   });
-  it('should return false when passed "lane cborrowed"', () => {
-    assert.equal(aBCheck('lane cborrowed'), false);
+
+  test('should return false when passed "lane cborrowed"', () => {
+    expect(aBCheck("lane cborrowed")).toBe(false);
   });
 });

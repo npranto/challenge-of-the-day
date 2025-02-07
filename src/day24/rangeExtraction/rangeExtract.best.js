@@ -17,8 +17,8 @@ function splitIntoRanges(ranges, number) {
 }
 
 function convertToRange(range) {
-  return range.length < 3 
-    ? range.join(',') 
+  return range.length < 3
+    ? range.join(",")
     : `${range[0]}-${range[range.length - 1]}`;
 }
 
@@ -26,7 +26,7 @@ function rangeExtraction(individualIntegers) {
   return individualIntegers
     .reduce(splitIntoRanges, [])
     .map(convertToRange)
-    .join(',');
+    .join(",");
 }
 
 export default rangeExtraction;

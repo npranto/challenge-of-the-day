@@ -1,14 +1,10 @@
-import { assert } from 'chai';
+import evenFibonacci from "./evenFibonacci";
 
-import isPrime from './evenFibonacci';
-
-describe('evenFibonacci()', () => {
-  it('should return true when passed 5', () => {
-    // assert.equal(evenFibonacci(5), false);
+describe("evenFibonacci()", () => {
+  test("returns the sum of even Fibonacci numbers up to the passed value", () => {
+    expect(evenFibonacci(10)).toBe(10);
+    expect(evenFibonacci(60)).toBe(44);
+    expect(evenFibonacci(1000)).toBe(798);
+    expect(evenFibonacci(100000)).toBe(60696);
   });
 });
-
-// console.log(evenFibonacci(10)); // 10
-// console.log(evenFibonacci(60)); // 44
-// console.log(evenFibonacci(1000)); // 798
-// console.log(evenFibonacci(100000)); // 60696

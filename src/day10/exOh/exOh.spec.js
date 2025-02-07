@@ -1,12 +1,11 @@
-import { assert } from 'chai';
+import exOh from "./exOh";
 
-import exOh from './exOh';
-
-describe('exOh()', () => {
-  it('should return false when passed "xooxxxxooxo"', () => {
-    assert.equal(exOh('xooxxxxooxo'), false);
+describe("exOh()", () => {
+  test('returns false for "xooxxxxooxo"', () => {
+    expect(exOh("xooxxxxooxo")).toBe(false);
   });
-  it('should return true when passed "xxoxxooo"', () => {
-    assert.equal(exOh('xxoxxooo'), true);
+
+  test('returns true for "xxoxxooo"', () => {
+    expect(exOh("xxoxxooo")).toBe(true);
   });
 });

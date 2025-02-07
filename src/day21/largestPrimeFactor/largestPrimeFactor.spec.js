@@ -1,21 +1,19 @@
-import { assert } from 'chai';
+import largestPrimeFactor from "./largestPrimeFactor";
 
-import largestPrimeFactor from './largestPrimeFactor';
-
-describe('largestPrimeFactor()', () => {
-  it('should return 2 when passed 2', () => {
-    assert.equal(largestPrimeFactor(2), 2);
+describe("largestPrimeFactor()", () => {
+  test("should return 2 when passed 2", () => {
+    expect(largestPrimeFactor(2)).toBe(2);
   });
-  it('should return 3 when passed 3', () => {
-    assert.equal(largestPrimeFactor(3), 3);
+  test("should return 3 when passed 3", () => {
+    expect(largestPrimeFactor(3)).toBe(3);
   });
-  it('should return 5 when passed 5', () => {
-    assert.equal(largestPrimeFactor(5), 5);
+  test("should return 5 when passed 5", () => {
+    expect(largestPrimeFactor(5)).toBe(5);
   });
-  it('should return 7 when passed 7', () => {
-    assert.equal(largestPrimeFactor(7), 7);
+  test("should return 7 when passed 7", () => {
+    expect(largestPrimeFactor(7)).toBe(7);
   });
-  it('should return 29 when passed 13195', () => {
-    assert.equal(largestPrimeFactor(13195), 29);
+  test("should return 29 when passed 13195", () => {
+    expect(largestPrimeFactor(13195)).toBe(29);
   });
 });

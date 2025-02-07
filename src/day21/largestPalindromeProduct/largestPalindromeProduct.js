@@ -1,7 +1,3 @@
-/* eslint-disable function-paren-newline */
-/* eslint-disable no-shadow */
-/* eslint-disable no-restricted-properties */
-/* eslint-disable no-plusplus */
 // largestPalindromeProduct
 const largestPalindromeProduct = (numberOfDigits) => {
   // 1 => search from 1-9
@@ -9,7 +5,7 @@ const largestPalindromeProduct = (numberOfDigits) => {
   // 3 => search from 100-999
   const getHighLimit = (numberOfDigits) => Math.pow(10, numberOfDigits) - 1;
   const isPalindrome = (str) =>
-    str.toLowerCase() === str.toLowerCase().split('').reverse().join('');
+    str.toLowerCase() === str.toLowerCase().split("").reverse().join("");
 
   const highLimit = getHighLimit(numberOfDigits);
   const allProducts = [];

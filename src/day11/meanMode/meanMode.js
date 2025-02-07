@@ -1,5 +1,5 @@
-import findMean from '../findMean/findMean';
-import findMode from '../findMode/findMode';
+import findMean from "../findMean/findMean";
+import findMode from "../findMode/findMode";
 
 const meanMode = (arrOfNumbers) => {
   const mean = findMean(arrOfNumbers);
