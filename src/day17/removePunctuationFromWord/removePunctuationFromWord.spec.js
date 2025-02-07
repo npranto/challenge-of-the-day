@@ -17,7 +17,7 @@ describe('removePunctuationFromWord()', () => {
   it("should return 'what are you talking about bro' when input is 'what are you talking about, bro?'", () => {
     assert.equal(
       removePunctuationFromWord('what are you talking about, bro?'),
-      'what are you talking about bro',
+      'what are you talking about bro'
     );
   });
 });

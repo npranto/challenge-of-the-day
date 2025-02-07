@@ -1,5 +1,3 @@
-/* eslint-disable no-param-reassign */
-/* eslint-disable no-unused-expressions */
 const getNextLetter = (curr) => {
   if (typeof curr === 'string' && curr.toLowerCase() !== curr.toUpperCase()) {
     return String.fromCharCode(curr.charCodeAt(0) + 1);

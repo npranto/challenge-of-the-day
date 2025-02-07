@@ -1,11 +1,11 @@
-import { assert } from 'chai';
 import letterChanges from './letterChanges';
 
 describe('letterChanges()', () => {
-  it("should return 'Ifmmp*3' when passed 'hello*3'", () => {
-    assert.equal(letterChanges('hello*3'), 'Ifmmp*3');
+  test("should return 'Ifmmp*3' when passed 'hello*3'", () => {
+    expect(letterChanges('hello*3')).toBe('Ifmmp*3');
   });
-  it("should return 'gvO Ujnft!' when passed 'fun times!'", () => {
-    assert.equal(letterChanges('fun times!'), 'gvO Ujnft!');
+
+  test("should return 'gvO Ujnft!' when passed 'fun times!'", () => {
+    expect(letterChanges('fun times!')).toBe('gvO Ujnft!');
   });
 });

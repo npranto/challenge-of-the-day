@@ -5,7 +5,7 @@ const simpleSymbols = (str) => {
     .split('')
     .find(
       (elem, index, array) =>
-        isLetter(elem) && (index === 0 || array[index - 1] !== '+'),
+        isLetter(elem) && (index === 0 || array[index - 1] !== '+')
     );
   return valueWithNoSymbolBeforeIt ? 'false' : 'true';
 };

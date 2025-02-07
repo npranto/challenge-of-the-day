@@ -1,26 +1,29 @@
-import { assert } from 'chai';
-
 import firstFactorial from './firstFactorial';
 
 describe('firstFactorial()', () => {
   it('should return 24 when passed 4', () => {
-    assert.equal(firstFactorial(4), 24);
+    expect(firstFactorial(4)).toBe(24);
   });
+
   it('should return 120 when passed 5', () => {
-    assert.equal(firstFactorial(5), 120);
+    expect(firstFactorial(5)).toBe(120);
   });
+
   it('should return 1 when passed 0', () => {
-    assert.equal(firstFactorial(0), 1);
+    expect(firstFactorial(0)).toBe(1);
   });
+
   describe('Different argument type cases', () => {
     it("should return 'undefined' when passed 5.25", () => {
-      assert.equal(firstFactorial(5.25), undefined);
+      expect(firstFactorial(5.25)).toBeNull();
     });
+
     it('should return undefined when passed true', () => {
-      assert.equal(firstFactorial(true), undefined);
+      expect(firstFactorial(true)).toBeNull();
     });
+
     it("should return undefined when passed '10'", () => {
-      assert.equal(firstFactorial(true), undefined);
+      expect(firstFactorial('10')).toBeNull();
     });
   });
 });

@@ -1,15 +1,15 @@
-import { assert } from 'chai';
-
 import isEven from './isEven';
 
 describe('isEven()', () => {
-  it('should return false when passed 1', () => {
-    assert.equal(isEven(1), false);
+  test('returns false when passed 1', () => {
+    expect(isEven(1)).toBe(false);
   });
-  it('should return false when passed 9', () => {
-    assert.equal(isEven(9), false);
+
+  test('returns false when passed 9', () => {
+    expect(isEven(9)).toBe(false);
   });
-  it('should return true when passed 4', () => {
-    assert.equal(isEven(4), true);
+
+  test('returns true when passed 4', () => {
+    expect(isEven(4)).toBe(true);
   });
 });

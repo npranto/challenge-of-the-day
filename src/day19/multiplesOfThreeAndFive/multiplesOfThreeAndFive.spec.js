@@ -1,11 +1,11 @@
-import { assert } from 'chai';
 import sumOfMultiplesOfThreeAndFive from './multiplesOfThreeAndFive';
 
 describe('sumOfMultiplesOfThreeAndFive()', () => {
-  it('should return 23 when passed 10', () => {
-    assert.equal(sumOfMultiplesOfThreeAndFive(10), 23);
+  test('returns 23 when passed 10', () => {
+    expect(sumOfMultiplesOfThreeAndFive(10)).toBe(23);
   });
-  it('should return 233168 when passed 1000', () => {
-    assert.equal(sumOfMultiplesOfThreeAndFive(1000), 233168);
+
+  test('returns 233168 when passed 1000', () => {
+    expect(sumOfMultiplesOfThreeAndFive(1000)).toBe(233168);
   });
 });

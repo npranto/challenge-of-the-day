@@ -1,5 +1,3 @@
-/* eslint-disable no-restricted-properties */
-/* eslint-disable no-param-reassign */
 const helperOfPowersofTwo = (currValue, currPower, powerOfTwoCandidate) => {
   if (currValue >= powerOfTwoCandidate) {
     return currValue;

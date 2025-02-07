@@ -1,11 +1,11 @@
-import { assert } from 'chai';
 import letterCapitalize from './letterCapitalize';
 
 describe('letterCapitalize()', () => {
-  it('should return "Hello World" when passed "hello world"', () => {
-    assert.equal(letterCapitalize('hello world'), 'Hello World');
+  test('should return "Hello World" when passed "hello world"', () => {
+    expect(letterCapitalize('hello world')).toBe('Hello World');
   });
-  it('should return "I Ran There" when passed "i ran there"', () => {
-    assert.equal(letterCapitalize('i ran there'), 'I Ran There');
+
+  test('should return "I Ran There" when passed "i ran there"', () => {
+    expect(letterCapitalize('i ran there')).toBe('I Ran There');
   });
 });

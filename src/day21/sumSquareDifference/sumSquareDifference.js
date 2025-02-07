@@ -1,6 +1,3 @@
-/* eslint-disable no-shadow */
-/* eslint-disable no-restricted-properties */
-/* eslint-disable no-plusplus */
 // sumSquareDifference
 const sumSquareDifference = (num) => {
   const naturalNumbers = [];
@@ -13,13 +10,13 @@ const sumSquareDifference = (num) => {
   // CASE 1: calculate sum of sum of squares
   const sumOfSquaresTotal = naturalNumbers.reduce(
     (total, num) => total + Math.pow(num, 2),
-    0,
+    0
   );
 
   // CASE 2: calculate sum of square of sum
   const squareOfSumTotal = Math.pow(
     naturalNumbers.reduce((total, num) => total + num, 0),
-    2,
+    2
   );
 
   // diff between CASE 1 and 2

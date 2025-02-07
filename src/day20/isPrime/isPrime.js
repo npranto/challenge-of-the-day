@@ -1,4 +1,3 @@
-/* eslint-disable no-plusplus */
 const isPrime = (value) => {
   let possiblePrimeValue = Math.floor(value / 2);
   while (possiblePrimeValue > 1) {

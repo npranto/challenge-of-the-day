@@ -1,5 +1,3 @@
-/* eslint-disable radix */
-/* eslint-disable no-plusplus */
 const sumOfMultiplesOfThreeAndFive = (limit) => {
   const allMultiples = {};
   let counter = 1;
@@ -16,7 +14,7 @@ const sumOfMultiplesOfThreeAndFive = (limit) => {
 
   return Object.keys(allMultiples).reduce(
     (sum, eachMultiple) => sum + parseInt(eachMultiple),
-    0,
+    0
   );
 };
 

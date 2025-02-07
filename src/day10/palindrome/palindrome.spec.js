@@ -1,15 +1,15 @@
-import { assert } from 'chai';
-
 import palindrome from './palindrome';
 
 describe('palindrome()', () => {
-  it('should return true when passed "racecar"', () => {
-    assert.equal(palindrome('racecar'), true);
+  test('returns true for "racecar"', () => {
+    expect(palindrome('racecar')).toBe(true);
   });
-  it('should return false when passed "noway"', () => {
-    assert.equal(palindrome('noway'), false);
+
+  test('returns false for "noway"', () => {
+    expect(palindrome('noway')).toBe(false);
   });
-  it('should return true when passed "nanan"', () => {
-    assert.equal(palindrome('nanan'), true);
+
+  test('returns true for "nanan"', () => {
+    expect(palindrome('nanan')).toBe(true);
   });
 });

@@ -17,8 +17,8 @@ function splitIntoRanges(ranges, number) {
 }
 
 function convertToRange(range) {
-  return range.length < 3 
-    ? range.join(',') 
+  return range.length < 3
+    ? range.join(',')
     : `${range[0]}-${range[range.length - 1]}`;
 }
 

@@ -1,6 +1,3 @@
-/* eslint-disable no-param-reassign */
-/* eslint-disable radix */
-/* eslint-disable no-shadow */
 const kaprekarsConstant = (num) => {
   const orderNumber = (num, sortLogic) =>
     parseInt(
@@ -9,7 +6,7 @@ const kaprekarsConstant = (num) => {
         .split('')
         .map((char) => parseInt(char))
         .sort(sortLogic)
-        .join(''),
+        .join('')
     );
 
   const fitForFourDigit = (num) => {

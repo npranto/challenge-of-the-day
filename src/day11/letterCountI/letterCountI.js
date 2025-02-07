@@ -1,4 +1,3 @@
-/* eslint-disable no-shadow */
 /* eslint-disable no-unused-vars */
 import trimPunctuationsFromBothEnd from '../../day9/trimPunctuationsFromBothEnd/trimPunctuationsFromBothEnd';
 import numberOfTimesLetterOccurInWord from '../numberOfTimesLetterOccurInWord/numberOfTimesLetterOccurInWord';

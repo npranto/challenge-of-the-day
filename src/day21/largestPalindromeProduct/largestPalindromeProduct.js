@@ -1,7 +1,3 @@
-/* eslint-disable function-paren-newline */
-/* eslint-disable no-shadow */
-/* eslint-disable no-restricted-properties */
-/* eslint-disable no-plusplus */
 // largestPalindromeProduct
 const largestPalindromeProduct = (numberOfDigits) => {
   // 1 => search from 1-9
@@ -20,7 +16,7 @@ const largestPalindromeProduct = (numberOfDigits) => {
   }
 
   const allPalindromeProducts = allProducts.filter((product) =>
-    isPalindrome(`${product}`),
+    isPalindrome(`${product}`)
   );
 
   return Math.max(...allPalindromeProducts);

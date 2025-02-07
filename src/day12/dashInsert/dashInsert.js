@@ -1,4 +1,3 @@
-/* eslint-disable no-plusplus */
 import isOdd from '../isOdd/isOdd';
 
 const dashInsert = (num) => {

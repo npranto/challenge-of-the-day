@@ -1,26 +1,29 @@
-import { assert } from 'chai';
-
 import firstReverse from './firstReverse';
 
 describe('firstReverse()', () => {
-  it("should return 'bikahs' when passed 'shakib'", () => {
-    assert.equal(firstReverse('shakib'), 'bikahs');
+  test("should return 'bikahs' when passed 'shakib'", () => {
+    expect(firstReverse('shakib')).toBe('bikahs');
   });
-  it("should return '' when passed ''", () => {
-    assert.equal(firstReverse(''), '');
+
+  test("should return '' when passed ''", () => {
+    expect(firstReverse('')).toBe('');
   });
-  it("should return 'a' when passed 'a'", () => {
-    assert.equal(firstReverse('a'), 'a');
+
+  test("should return 'a' when passed 'a'", () => {
+    expect(firstReverse('a')).toBe('a');
   });
-  it("should return '?uoy era woh ,olleh' when passed 'hello, how are you?'", () => {
-    assert.equal(firstReverse('hello, how are you?'), '?uoy era woh ,olleh');
+
+  test("should return '?uoy era woh ,olleh' when passed 'hello, how are you?'", () => {
+    expect(firstReverse('hello, how are you?')).toBe('?uoy era woh ,olleh');
   });
+
   describe('Different argument type cases', () => {
-    it("should return 'undefined' when passed 5", () => {
-      assert.equal(firstReverse(5), undefined);
+    test("should return 'undefined' when passed 5", () => {
+      expect(firstReverse(5)).toBeNull();
     });
-    it('should return undefined when passed true', () => {
-      assert.equal(firstReverse(true), undefined);
+
+    test('should return undefined when passed true', () => {
+      expect(firstReverse(true)).toBeNull();
     });
   });
 });

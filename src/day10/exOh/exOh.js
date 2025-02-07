@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-expressions */
 const exOh = (str) => {
   let toggler = 0;
   str.split('').forEach((curr) => {
